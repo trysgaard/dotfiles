@@ -7,7 +7,7 @@ My personal dotfiles managed with [chezmoi](https://www.chezmoi.io/).
 Set up a new machine with a single command:
 
 ```bash
-curl -sfL https://raw.githubusercontent.com/trysgaard/dotfiles/master/.setup.sh | bash
+curl -sfL https://raw.githubusercontent.com/trysgaard/dotfiles/main/.setup.sh | bash
 ```
 
 Or manually:
@@ -29,7 +29,7 @@ chezmoi init --apply trysgaard
 - `.chezmoi.toml` - Chezmoi configuration and user data
 - `.setup.sh` - One-command setup script
 - `Brewfile.tmpl` - Homebrew packages and applications
-- `run_once_install-packages.sh.tmpl` - One-time setup script for packages and system preferences
+- `run_once_install-packages.sh` - One-time setup script for packages and system preferences
 - `run_onchange_brew-packages.sh.tmpl` - Script that runs when Brewfile changes
 - `*.tmpl` - Template files for configuration
 
@@ -54,7 +54,7 @@ chezmoi update
 
 ## What the Setup Does
 
-The `run_once_install-packages.sh.tmpl` script:
+The `run_once_install-packages.sh` script:
 
 1. **Sets macOS preferences**:
    - Enables Dark Mode
