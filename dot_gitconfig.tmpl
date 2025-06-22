@@ -1,0 +1,31 @@
+[user]
+    name = trysgaard
+    email = rysgaard@me.com
+
+[core]
+    editor = code --wait
+    autocrlf = input
+
+[init]
+    defaultBranch = main
+
+[alias]
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    ca = commit -a
+    un = reset HEAD --
+    last = log -1 HEAD
+    visual = !gitk
+
+[credential]
+    helper = osxkeychain
+
+[pull]
+    rebase = false
+
+[push]
+    default = simple

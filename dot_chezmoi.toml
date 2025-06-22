@@ -1,0 +1,8 @@
+[data]
+    name = "trysgaard"
+    email = "rysgaard@me.com"
+    github_username = "trysgaard"
+
+[hooks]
+    before = []
+    after = ["run_once_setup_macos_defaults.sh"]
