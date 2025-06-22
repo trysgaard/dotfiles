@@ -8,8 +8,8 @@ osascript -e 'tell application "System Events" to tell appearance preferences to
 # Dock preferences
 defaults write com.apple.dock orientation left
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0
-defaults write com.apple.dock autohide-time-modifier -float 0
+defaults write com.apple.dock autohide-delay -float 0.2
+defaults write com.apple.dock autohide-time-modifier -float 0.5
 
 # Finder preferences
 defaults write com.apple.finder AppleShowAllFiles -bool true
